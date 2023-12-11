@@ -68,7 +68,7 @@ font-weight: 400;
 line-height: normal;
 }
 .margin-8{
-    margin-top: 80px;
+    margin-top: 180px;
 }
 .projects{
 
@@ -194,5 +194,73 @@ flex-shrink: 0;
     text-align: center;
 }
 .gray-block{
-    fill: #33373A;
+    background-color: #33373A;
+}
+.rightas{
+    float:inline-end;
+}
+.small-upper{
+    margin-top: 20;
+}
+.card-awrds{
+    background-color: #CDCBCB;
+}
+.awards-img{
+    width: 70px;
+height: 102px;
+flex-shrink: 0;
+border: 2px solid #000;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.awards-text{
+    color: #000;
+font-family: Allerta;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#contactus-title{
+    color: #FFF;
+    font-family: 'Alfa Slab One', serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+input[type=text]{
+    background-color: #8B8484;
+}
+input[type=email]{
+    background-color: #8B8484;
+}
+.textbox{
+    background-color: #8B8484;
+}
+.icon{
+    width: 36px;
+height: 27.821px;
+flex-shrink: 0;
+background: transparent;
+}
+.left-margin-80{
+    margin-left:150;;
+}
+.contactdetails{
+color: #A96224;
+font-family: Inconsolata;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+
+display: inline;
+
+}
+.inline{
+    display: inline-block;
+}
+.btnlist{
+    height: 60;
+  width: 60; 
 }
