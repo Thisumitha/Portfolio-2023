@@ -1,580 +1,438 @@
 <html>
-  <head>
-    <style>
-      @import url("https://fonts.cdnfonts.com/css/jsmath-cmti10");
-    </style>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Angkor&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inconsolata:wght@200&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/jsmath-cmti10");
+  </style>
 
-    <link rel="stylesheet" href="Style/style.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inconsolata:wght@200&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-0">
-      <div class="container">
-        <a class="offcanvas-title" href="#">Thisumitha.me</a>
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="sidebar offcanvas offcanvas-start text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header text-white border-bottom">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Thisumitha.me
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end fs-10 flex-grow-1 pe-5">
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#Skills">Skills</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="#contact">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="Style/style.css" />
+</head>
 
-    <!--end Navbar-->
-
-    <div class="row">
-      <div class="col-lg-6 col-sm-12 p-5">
-        <h1 id="hi">HI</h1>
-        <h2 id="imThisumitha">Thisumitha Bandara</h2>
-        <h2 id="webdev">Web Developer,Application developer</h2>
-        <div class="short-about">
-          <p>
-            I’m a web developer and application developer with experience for 3
-            months. My expertise is to create and website develops, Java
-            applications develop and many more...
-          </p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 col-sm-12">
-        <img class="p-5" src="Assets/profile.png" alt="profile photo" />
-      </div>
-    </div>
-    <div class="row">
-      <button type="button" class="btn btn-outline-warning contact">
-        Contact me
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-0">
+    <div class="container">
+      <a class="offcanvas-title" href="#">Thisumitha.me</a>
+      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <div class="margin-8 row">
-      <div class="col-1 projects">8</div>
-      <div class="col-2 projects-name">
-        <h1>Completed Application</h1>
+      <div class="sidebar offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Thisumitha.me
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end fs-10 flex-grow-1 pe-5">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-2 projects">4</div>
-      <div class="col-2 projects-name">
-        <h1>Completed Websites</h1>
-      </div>
     </div>
+  </nav>
 
-    <!-- page 2 -->
+  <!--end Navbar-->
 
-    <div class="margin-8 left-margin-30">
-      <div id="about-me">About me</div>
-      <div id="and-my-work">And my work</div>
-      <div class="about justify-content-center border-line">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 p-5">
+      <h1 id="hi">HI</h1>
+      <h2 id="imThisumitha">Thisumitha Bandara</h2>
+      <h2 id="webdev">Web Developer,Application developer</h2>
+      <div class="short-about">
         <p>
-          I’m a studious, energetic and hardworking teenager who is willing to
-          apply my knowledge and skills in web Development . I am going to sit
-          my G.S.C Advanced Level examination in Technology stream in 2025 I
-          Study in kgl Pinnawala national school scince 2016. I teach Arduno to
-          my students and I am currently following a software development course
-          which is conducted by ICET (PVT )Ltd(a trust worthy institute with
-          years of experience has guided many people to their stability in the
-          field). I would like to be cooperative with people who trust me.
+          I’m a web developer and application developer with experience for 3
+          months. My expertise is to create and website develops, Java
+          applications develop and many more...
         </p>
       </div>
     </div>
-    <div class="row border-line">
-      <div class="margin-8 col-4">
-        <ul class="list-group">
-          <li class="list-group-item">Birthday : 20 February 2006</li>
-          <li class="list-group-item">Age : 17</li>
-          <li class="list-group-item">Phone : +94 76 4342246</li>
-          <li class="list-group-item">Email : thisu2006@gmail.com</li>
-        </ul>
-      </div>
-      <div class="left-margin-30 margin-8 col-4">
-        <ul class="list-group">
-          <li class="list-group-item">Birthday : 20 February 2006</li>
-          <li class="list-group-item">Age : 17</li>
-          <li class="list-group-item">Phone : +94 76 4342246</li>
-          <li class="list-group-item">Email : thisu2006@gmail.com</li>
-        </ul>
-      </div>
+
+    <div class="col-lg-6 col-sm-12">
+      <img class="p-5" src="Assets/profile.png" alt="profile photo" />
     </div>
-    <button type="button" class="btn margin-3 btn-outline-warning contact">
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-outline-warning contact">
       Contact me
     </button>
-    <!-- skills -->
-    <div
-      class="skills margin-8 d-flex justify-content-center center left-margin-50"
-    >
-      <h1>Skills</h1>
+  </div>
+  <div class="margin-8 row">
+    <div class="col-1 projects">8</div>
+    <div class="col-2 projects-name">
+      <h1>Completed Application</h1>
     </div>
-    <div class="row row-cols-1 row-cols-md-5 g-5 margin-3 d-flex border-line">
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-java-logo-96.png"
-            class="card-img-top"
-            alt="java logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-python-96.png"
-            class="card-img-top"
-            alt="python logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-mysql-logo-96.png"
-            class="card-img-top"
-            alt="sql logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-html-logo-96.png"
-            class="card-img-top"
-            alt="html"
-          />
-        </div>
-      </div>
+    <div class="col-2 projects">4</div>
+    <div class="col-2 projects-name">
+      <h1>Completed Websites</h1>
     </div>
-    <div class="row row-cols-1 row-cols-md-5 g-5 margin-3 d-flex border-line">
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-nodejs-96.png"
-            class="card-img-top"
-            alt="node logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-css-logo-96.png"
-            class="card-img-top"
-            alt="python logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-bootstrap-96.png"
-            class="card-img-top"
-            alt="boostrap logo"
-          />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img
-            src="Assets\icons8-figma-96.png"
-            class="card-img-top"
-            alt="figma logo"
-          />
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <!-- My Portfolio -->
+  <!-- page 2 -->
 
-    <div class="skills margin-8 left-margin-50 d-flex center">
-      <h1>My Portfolio</h1>
+  <div class="margin-8 left-margin-30">
+    <div id="about-me">About me</div>
+    <div id="and-my-work">And my work</div>
+    <div class="about justify-content-center border-line">
+      <p>
+        I’m a studious, energetic and hardworking teenager who is willing to
+        apply my knowledge and skills in web Development . I am going to sit
+        my G.S.C Advanced Level examination in Technology stream in 2025 I
+        Study in kgl Pinnawala national school scince 2016. I teach Arduno to
+        my students and I am currently following a software development course
+        which is conducted by ICET (PVT )Ltd(a trust worthy institute with
+        years of experience has guided many people to their stability in the
+        field). I would like to be cooperative with people who trust me.
+      </p>
     </div>
-    <div class="portfolio-about center">
-      <h4>
-        The Java projects and Web development applications I did are included
-        here.
-      </h4>
+  </div>
+  <div class="row border-line">
+    <div class="margin-8 col-4">
+      <ul class="list-group">
+        <li class="list-group-item">Birthday : 20 February 2006</li>
+        <li class="list-group-item">Age : 17</li>
+        <li class="list-group-item">Phone : +94 76 4342246</li>
+        <li class="list-group-item">Email : thisu2006@gmail.com</li>
+      </ul>
     </div>
+    <div class="left-margin-30 margin-8 col-4">
+      <ul class="list-group">
+        <li class="list-group-item">Birthday : 20 February 2006</li>
+        <li class="list-group-item">Age : 17</li>
+        <li class="list-group-item">Phone : +94 76 4342246</li>
+        <li class="list-group-item">Email : thisu2006@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <button type="button" class="btn margin-3 btn-outline-warning contact">
+    Contact me
+  </button>
+  <!-- skills -->
+  <div class="skills margin-8 d-flex justify-content-center center left-margin-50">
+    <h1>Skills</h1>
+  </div>
+  <div class="row row-cols-1 row-cols-md-5 g-5 margin-3 d-flex border-line">
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-java-logo-96.png" class="card-img-top" alt="java logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-python-96.png" class="card-img-top" alt="python logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-mysql-logo-96.png" class="card-img-top" alt="sql logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-html-logo-96.png" class="card-img-top" alt="html" />
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-5 g-5 margin-3 d-flex border-line">
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-nodejs-96.png" class="card-img-top" alt="node logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-css-logo-96.png" class="card-img-top" alt="python logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-bootstrap-96.png" class="card-img-top" alt="boostrap logo" />
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Assets\icons8-figma-96.png" class="card-img-top" alt="figma logo" />
+      </div>
+    </div>
+  </div>
 
-    <div class="row border-line">
-      <div class="row row-cols-4 g-5 d-flex">
-        <div class="col">
-          <div class="card">
-            <img
-              src="Assets\Projects\FashionShop.png"
-              class="card-img-top"
-              alt="first"
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <h5>Fashion Shop  <button
-                  class="btn btn-outline-warning contact github"
-                  type="button"
-                >
+  <!-- My Portfolio -->
+
+  <div class="skills margin-8 left-margin-50 d-flex center">
+    <h1>My Portfolio</h1>
+  </div>
+  <div class="portfolio-about center">
+    <h4>
+      The Java projects and Web development applications I did are included
+      here.
+    </h4>
+  </div>
+
+  <div class="row border-line">
+    <div class="row row-cols-4 g-5 d-flex">
+      <div class="col">
+        <div class="card">
+          <img src="Assets\Projects\FashionShop.png" class="card-img-top" alt="first" />
+          <div class="card-body">
+            <div class="card-title">
+              <h5>Fashion Shop <button class="btn btn-outline-warning contact github" type="button">
                   <img src="Assets\icons8-github-30.png" />
                 </button></h5>
-               
-              </div>
+
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="Assets\Projects\TaxCal.png"
-              class="card-img-top"
-              alt="2nd"
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <label>Tax Calculator
-                  <button
-                  class="btn btn-outline-warning contact github right"
-                  type="button"
-                >
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Assets\Projects\TaxCal.png" class="card-img-top" alt="2nd" />
+          <div class="card-body">
+            <div class="card-title">
+              <label>Tax Calculator
+                <button class="btn btn-outline-warning contact github right" type="button">
                   <img src="Assets\icons8-github-30.png" />
                 </button>
-                </label>
-                
-              </div>
+              </label>
+
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="Assets\Projects\railwayStation.png"
-              class="card-img-top"
-              alt="3rd"
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <label>Railway System <button
-                  class="btn btn-outline-warning contact github right"
-                  type="button"
-                >
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Assets\Projects\railwayStation.png" class="card-img-top" alt="3rd" />
+          <div class="card-body">
+            <div class="card-title">
+              <label>Railway System <button class="btn btn-outline-warning contact github right" type="button">
                   <img src="Assets\icons8-github-30.png" />
                 </button></label>
-                
-              </div>
+
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="Assets\Projects\Screenshot 2023-11-28 130804.png"
-              class="card-img-top"
-              alt="3rd"
-            />
-            <div class="card-body">
-              <div class="card-title">
-                <label>Fashion Shop CMD <button
-                  class="btn btn-outline-warning contact github right"
-                  type="button"
-                >
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Assets\Projects\Screenshot 2023-11-28 130804.png" class="card-img-top" alt="3rd" />
+          <div class="card-body">
+            <div class="card-title">
+              <label>Fashion Shop CMD <button class="btn btn-outline-warning contact github right" type="button">
                   <img src="Assets\icons8-github-30.png" />
                 </button></label>
-                
-              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="skills margin-8 left-margin-50 d-flex">
+      <h1>Awards</h1>
+    </div>
+  </div>
+  <div class="container gray-block">
+    <div><br /><br /></div>
+    <div class="card card-awrds mb-3 left-margin-30">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-2">
+            <img  class="awards-img" src="Assets\webcertificate.png"  alt="..." />
+          </div>
+          <div class="col-8 awards-text">
+            <h5>
+              Name- Web Application Development &nbsp&nbsp&nbsp&nbsp
+              Year-2023.07.13
+            </h5>
+            <p class="awards-text">
+              The workshop on Web Application Development conducted by
+              Webcomms Global (PVT) Ltd. and LK Domain Registry in
+              collaboration with Zonal Education Office, Mawanella, and
+              actively contributing to the design of the school website was
+              awarded this certificate on July 13, 2023, at ITDLH, Mawanella.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card-awrds mb-3 left-margin-30">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-2">
+            <img   class="awards-img" src="Assets\IMG_20231125_0001.jpg" alt="..." />
+          </div>
+          <div class="col-8 awards-text">
+            <h5>
+              Name- Sahasak Nimavum &nbsp&nbsp&nbsp&nbsp Year- 2020.03.02
+            </h5>
+            <p class="awards-text">
+              Kg/Mw/Pinnawala Central College actively participated under the
+              category of school by presenting the invention Automatic Plant
+              Protection and Water Supplying System, organized by the Sri
+              Lanka Inventors Commission.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card-awrds mb-3 left-margin-30">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-2">
+            <img  class="awards-img" src="Assets\IMG_20231125_0003.jpg"  alt="..." />
+          </div>
+          <div class="col-8 awards-text">
+            <h5>Name- Chess Tournament &nbsp&nbsp&nbsp&nbsp Year- 2018</h5>
+            <p class="awards-text">
+              Sabaragamuwa Provincial Chess Tournament was organized by the
+              Sri Lanka Chess Association and held under 13 boys. Place was
+              champion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card-awrds mb-3 left-margin-30">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-2">
+            <img class="awards-img" src="Assets\Screenshot 2023-11-28 122235.png"  alt="..." />
+          </div>
+          <div class="col-8 awards-text">
+            <h5>
+              Name- Python for Beginners &nbsp&nbsp&nbsp&nbsp Year- 2023
+            </h5>
+            <p class="awards-text">
+              Python for Beginners is Full stack programme conducted by the
+              Department of computer Science & Engineering, Faculty of
+              Engineering, University Moratuwa .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div><br /><br /></div>
+  </div>
+  <br /><br />
+  <div class="container">
     <div class="row">
-      <div class="skills margin-8 left-margin-50 d-flex">
-        <h1>Awards</h1>
+      <div class="d-flex">
+        <h1 id="contactus-title">Contact Us</h1>
       </div>
     </div>
-    <div class="container gray-block">
-      <div><br /><br /></div>
-      <div class="card card-awrds mb-3 left-margin-30">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-2">
-              <img
-                src="Assets\webcertificate.png"
-                class="awards-img"
-                alt="..."
-              />
-            </div>
-            <div class="col-8 awards-text">
-              <h5>
-                Name- Web Application Development &nbsp&nbsp&nbsp&nbsp
-                Year-2023.07.13
-              </h5>
-              <p class="awards-text">
-                The workshop on Web Application Development conducted by
-                Webcomms Global (PVT) Ltd. and LK Domain Registry in
-                collaboration with Zonal Education Office, Mawanella, and
-                actively contributing to the design of the school website was
-                awarded this certificate on July 13, 2023, at ITDLH, Mawanella.
-              </p>
-            </div>
-          </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 gray-block">
+        <div class="mb-3">
+          <br />
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+        </div>
+        <div class="mb-3">
+          <br />
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" />
+        </div>
+        <div class="mb-3">
+          <br />
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Contact Number" />
+        </div>
+        <div class="mb-3">
+          <br />
+          <textarea class="form-control textbox" id="exampleFormControlTextarea1" rows="10"
+            placeholder="Your Message"></textarea>
+          <br />
         </div>
       </div>
-      <div class="card card-awrds mb-3 left-margin-30">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-2">
-              <img
-                src="Assets\IMG_20231125_0001.jpg"
-                class="awards-img"
-                alt="..."
-              />
-            </div>
-            <div class="col-8 awards-text">
-              <h5>
-                Name- Sahasak Nimavum &nbsp&nbsp&nbsp&nbsp Year- 2020.03.02
-              </h5>
-              <p class="awards-text">
-                Kg/Mw/Pinnawala Central College actively participated under the
-                category of school by presenting the invention Automatic Plant
-                Protection and Water Supplying System, organized by the Sri
-                Lanka Inventors Commission.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-awrds mb-3 left-margin-30">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-2">
-              <img
-                src="Assets\IMG_20231125_0003.jpg"
-                class="awards-img"
-                alt="..."
-              />
-            </div>
-            <div class="col-8 awards-text">
-              <h5>Name- Chess Tournament &nbsp&nbsp&nbsp&nbsp Year- 2018</h5>
-              <p class="awards-text">
-                Sabaragamuwa Provincial Chess Tournament was organized by the
-                Sri Lanka Chess Association and held under 13 boys. Place was
-                champion.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card card-awrds mb-3 left-margin-30">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-2">
-              <img
-                src="Assets\Screenshot 2023-11-28 122235.png"
-                class="awards-img"
-                alt="..."
-              />
-            </div>
-            <div class="col-8 awards-text">
-              <h5>
-                Name- Python for Beginners &nbsp&nbsp&nbsp&nbsp Year- 2023
-              </h5>
-              <p class="awards-text">
-                Python for Beginners is Full stack programme conducted by the
-                Department of computer Science & Engineering, Faculty of
-                Engineering, University Moratuwa .
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div><br /><br /></div>
-    </div>
-    <br /><br />
-    <div class="container">
-      <div class="row">
-        <div class="d-flex">
-          <h1 id="contactus-title">Contact Us</h1>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 gray-block">
-          <div class="mb-3">
-            <br />
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Name"
-            />
-          </div>
-          <div class="mb-3">
-            <br />
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Email"
-            />
-          </div>
-          <div class="mb-3">
-            <br />
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="Contact Number"
-            />
-          </div>
-          <div class="mb-3">
-            <br />
-            <textarea
-              class="form-control textbox"
-              id="exampleFormControlTextarea1"
-              rows="10"
-              placeholder="Your Message"
-            ></textarea>
-            <br />
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12 ">
+      <div class="col-lg-6 col-sm-12 ">
         <div class="left-margin-80">
           <div class=" contactdetails">
-          <img class="contactdetails" src="Assets\call.png" alt="Italian Trulli ">: 0764842246 <br>
+            <img class="contactdetails" src="Assets\call.png" alt="Italian Trulli ">: 0764842246 <br>
           </div>
           <div class=" contactdetails">
             <img class="contactdetails" src="Assets\mail.png" alt="Italian Trulli ">: thisu2006@gmail.com <br>
-            </div>
-            <div class=" contactdetails">
-              <img class="contactdetails" src="Assets\map.png" alt="Italian Trulli ">: No146/Godagama/Mawanella
-              </div>
-            <div class="margin-3">
-              
-            </div>  
+          </div>
+          <div class=" contactdetails">
+            <img class="contactdetails" src="Assets\map.png" alt="Italian Trulli ">: No146/Godagama/Mawanella
+          </div>
+          <div class="margin-3">
+
+          </div>
         </div>
-        
+
         <div>
           <div class="btn-group left-margin-80" role="group" aria-label="Basic radio toggle button group"></div>
-            <button
-                  class="btn btn-outline-warning contact btnlist right"
-                  type="button"
-                >
-                  <img src="Assets\whatsapp.png" />
-                </button>
-              &nbsp;
-                <button
-                class="btn btn-outline-warning contact btnlist right"
-                type="button"
-              >
-                <img src="Assets\stackoverflow.png" />
-              </button>
-              &nbsp;
-              <button
-                class="btn btn-outline-warning contact btnlist right"
-                type="button"
-              >
-                <img src="Assets\insta.png" />
-              </button>
-              &nbsp;
-              <button
-                class="btn btn-outline-warning contact btnlist right"
-                type="button"
-              >
-                <img src="Assets\Fb.png" />
-              </button>
-              &nbsp;
-              <button
-                class="btn btn-outline-warning contact btnlist right"
-                type="button"
-              >
-                <img src="Assets\discord.png" />
-              </button>
-              &nbsp;
-              <button
-                class="btn btn-outline-warning contact btnlist right"
-                type="button"
-              >
-                <img src="Assets\GitHub.png" />
-              </button>
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\whatsapp.png" />
+          </button>
+          &nbsp;
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\stackoverflow.png" />
+          </button>
+          &nbsp;
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\insta.png" />
+          </button>
+          &nbsp;
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\Fb.png" />
+          </button>
+          &nbsp;
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\discord.png" />
+          </button>
+          &nbsp;
+          <button class="btn btn-outline-warning contact btnlist right" type="button">
+            <img src="Assets\GitHub.png" />
+          </button>
         </div>
         &nbsp;
-        </div>
-        </div>
       </div>
-      
-      
-      
     </div>
-    
-  
-    <script src="index.js"></script>
-  </body>
+  </div>
+
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
